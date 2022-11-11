@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/job-board-aleannlab/static/css/main.4f9c83bb.css",
+    "main.js": "/job-board-aleannlab/static/js/main.a0dca795.js",
+    "static/js/787.63361eb2.chunk.js": "/job-board-aleannlab/static/js/787.63361eb2.chunk.js",
+    "static/media/logo.svg": "/job-board-aleannlab/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/job-board-aleannlab/index.html",
+    "main.4f9c83bb.css.map": "/job-board-aleannlab/static/css/main.4f9c83bb.css.map",
+    "main.a0dca795.js.map": "/job-board-aleannlab/static/js/main.a0dca795.js.map",
+    "787.63361eb2.chunk.js.map": "/job-board-aleannlab/static/js/787.63361eb2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f9c83bb.css",
+    "static/js/main.a0dca795.js"
+  ]
+}
