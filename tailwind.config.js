@@ -4,15 +4,15 @@ module.exports = {
     theme: {
         extend: {
             width: {
-                '85': '85px',
-                '1400': '1400px'
+                85: "85px",
+                1400: "1400px",
             },
             height: {
-                '85': '85px',
+                85: "85px",
             },
             gap: {
-                '26': '26px',
-              }
+                26: "26px",
+            },
         },
     },
     plugins: [],
