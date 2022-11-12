@@ -5,10 +5,12 @@ module.exports = {
         extend: {
             width: {
                 85: "85px",
+                66: "66px",
                 1400: "1400px",
             },
             height: {
                 85: "85px",
+                66: "66px",
             },
             gap: {
                 26: "26px",
@@ -17,6 +19,7 @@ module.exports = {
                 dark: "#3A4562",
                 secondary: "#878D9D",
                 star: "#38415D",
+                "middle-gray": "#EFF0F5",
             },
         },
     },

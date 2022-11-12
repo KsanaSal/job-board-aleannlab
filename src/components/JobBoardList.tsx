@@ -1,6 +1,6 @@
-import star from "../assets/Star.svg";
 import location from "../assets/Location.svg";
 import bookMark from "../assets/Bookmark.svg";
+import { Stars } from "./Stars";
 
 export const JobBoardList = ({ jobList }: any) => {
     return (
@@ -8,12 +8,12 @@ export const JobBoardList = ({ jobList }: any) => {
             {jobList.map((job: any) => (
                 <div
                     key={job.id}
-                    className=" container bg-white shadow-md shadow-black-800/70 rounded-lg  mb-2 grid grid-cols-[auto_300px] gap-8 py-6 px-4"
+                    className=" container md:bg-white bg-middle-gray shadow-md shadow-black-800/70 rounded-lg  mb-2 grid grid-cols-[auto_300px] gap-8 py-6 px-4"
                 >
                     <div className="grid grid-cols-[100px_auto] gap-26">
                         {/* <div className="rounded-full bg-slate-200"> */}
                         <img
-                            className="rounded-full w-85 h-85 mr-26"
+                            className="rounded-full w-66 md:w-85 h-66 md:h-85 mr-26"
                             src={job.pictures[0]}
                             alt="job avatar"
                         />
@@ -34,16 +34,10 @@ export const JobBoardList = ({ jobList }: any) => {
                         </div>
                     </div>
                     <div className="grid grid-cols-[100px_auto] gap-8">
-                        <div className="flex items-center">
-                            <img className="h-5" src={star} alt="stars" />
-                            <img className="h-5" src={star} alt="stars" />
-                            <img className="h-5" src={star} alt="stars" />
-                            <img className="h-5" src={star} alt="stars" />
-                            <img className="h-5" src={star} alt="stars" />
-                        </div>
+                        <Stars />
                         <div className="flex flex-col items-end justify-between text-secondary tracking-wide">
                             <img
-                                className="w-8"
+                                className="hidden md:flex w-8"
                                 src={bookMark}
                                 alt="bookMark"
                             />
