@@ -8,11 +8,11 @@ export const JobBoardList = ({ jobList }: any) => {
             {jobList.map((job: any) => (
                 <div
                     key={job.id}
-                    className=" container md:bg-white bg-middle-gray shadow-md shadow-black-800/70 rounded-lg  mb-2 grid grid-cols-[100px_auto] py-6 px-4 "
+                    className=" container md:bg-white bg-middle-gray shadow-3xl md:shadow-4xl rounded-lg  mb-2 grid grid-cols-[66px_auto] md:grid-cols-[85px_auto] py-6 px-4 gap-5 md:gap-26"
                 >
                     <div className="pt-10 md:pt-0">
                         <img
-                            className="rounded-full w-66 md:w-85 h-66 md:h-85 mr-5 md:mr-7"
+                            className="rounded-full w-66 md:w-85 h-66 md:h-85"
                             src={job.pictures[0]}
                             alt="job avatar"
                         />
