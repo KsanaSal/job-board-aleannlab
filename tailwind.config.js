@@ -13,6 +13,11 @@ module.exports = {
             gap: {
                 26: "26px",
             },
+            colors: {
+                dark: "#3A4562",
+                secondary: "#878D9D",
+                star: "#38415D",
+            },
         },
     },
     plugins: [],
