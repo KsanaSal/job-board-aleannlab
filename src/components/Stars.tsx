@@ -1,6 +1,6 @@
 // import star from "../assets/Star.svg";
 import spriteIcon from "../assets/sprite-icons.svg";
-import emptyStar from "../assets/EmptyStar.svg";
+// import emptyStar from "../assets/EmptyStar.svg";
 
 export const Stars = () => {
     const random = () => {
