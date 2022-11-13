@@ -2,7 +2,11 @@ import location from "../assets/Location.svg";
 import bookMark from "../assets/Bookmark.svg";
 import { Stars } from "./Stars";
 
-export const JobBoardList = ({ jobList }: any) => {
+export const JobBoardList = ({ jobList, loading }: any) => {
+    if (loading) {
+        return <h2>Loading...</h2>;
+    }
+    
     return (
         <div className="py-8 grid place-content-center">
             {jobList.map((job: any) => (
