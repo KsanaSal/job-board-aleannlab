@@ -35,7 +35,11 @@ export const Pagination = ({
                 {pageNumbers.map((number) => (
                     <li
                         key={number}
-                        className="w-8 text-center font-bold text-xl text-dark-middle-gray"
+                        className={`w-8 text-center font-bold text-xl text-dark-middle-gray ${
+                            currentPage === number
+                                ? "text-middle-blue border-b-2 border-middle-blue"
+                                : ""
+                        }`}
                     >
                         <a href="#t" onClick={() => paginate(number)}>
                             {number}
