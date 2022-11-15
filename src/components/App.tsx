@@ -5,9 +5,10 @@ import { Route, Routes } from "react-router-dom";
 import JobBoard from "../pages/JobBoard";
 import JobDetails from "../pages/JobDetails";
 import { Jobs } from "../data/data";
+import { Job } from "../models/job";
 
 function App() {
-    const [jobs, setJobs] = useState<any[]>([]);
+    const [jobs, setJobs] = useState<Job[]>([]);
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
@@ -43,7 +44,7 @@ function App() {
                 />
                 <Route
                     path="jobBoard/:id"
-                    element={<JobDetails test="GFDRTYU" />}
+                    element={<JobDetails jobs={jobs} />}
                 ></Route>
             </Route>
         </Routes>

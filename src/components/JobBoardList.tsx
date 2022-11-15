@@ -2,6 +2,7 @@ import location from "../assets/Location.svg";
 import bookMark from "../assets/Bookmark.svg";
 import { Stars } from "./Stars";
 import { Link } from "react-router-dom";
+import { Job } from "../models/job";
 
 export const JobBoardList = ({ jobList, loading }: any) => {
     if (loading) {
@@ -10,7 +11,7 @@ export const JobBoardList = ({ jobList, loading }: any) => {
     console.log(jobList);
     return (
         <div className="py-8 grid place-content-center">
-            {jobList.map((job: any) => (
+            {jobList.map((job: Job) => (
                 <Link key={job.id} to={`jobBoard/${job.id}`}>
                     <div className=" container md:bg-white bg-middle-gray shadow-3xl md:shadow-4xl rounded-lg  mb-2 grid grid-cols-[66px_auto] md:grid-cols-[85px_auto] py-6 px-4 gap-5 md:gap-26">
                         <div className="pt-10 md:pt-0">

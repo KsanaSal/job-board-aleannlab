@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { JobBoardList } from "../components/JobBoardList";
 import { Pagination } from "../components/Pagination";
+import { Job } from "../models/job";
 
-const JobBoard = ({ jobs, loading }: { jobs: any; loading: boolean }) => {
+const JobBoard = ({ jobs, loading }: { jobs: Job[]; loading: boolean }) => {
     const [currentPage, setCurrentPage] = useState(1);
     const [jobsPerPage] = useState(5);
 
