@@ -10,7 +10,7 @@ export const JobBoardList = ({ jobList, loading }: any) => {
     }
     console.log(jobList);
     return (
-        <div className="py-8 grid place-content-center">
+        <div className="py-2 md:py-8 grid place-content-center">
             {jobList.map((job: Job) => (
                 <Link key={job.id} to={`jobBoard/${job.id}`}>
                     <div className=" container md:bg-white bg-middle-gray shadow-3xl md:shadow-4xl rounded-lg  mb-2 grid grid-cols-[66px_auto] md:grid-cols-[85px_auto] py-6 px-4 gap-5 md:gap-26">
