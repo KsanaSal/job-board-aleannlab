@@ -14,6 +14,8 @@ module.exports = {
             },
             gap: {
                 26: "26px",
+                10: "10px",
+                15: "15px",
             },
             margin: {
                 26: "26px",

@@ -10,21 +10,21 @@ const JobDetails = ({ jobs }: { jobs: Job[] }) => {
     console.log(jobs.filter((data) => data.id === id));
     console.log(job);
     return (
-        <div className="py-6 md:py-14 grid place-content-center">
+        <div className="container mx-auto rounded-lg bg-white py-6 px-4 md:py-14 grid">
             <div>
-                <header>
+                <header className=" grid ">
                     <h1 className="font-bold text-tx28 tracking-wide text-dark">
                         Job Details
                     </h1>
-                    <div>
-                        <div>
+                    <div className="flex gap-9 md:gap-6">
+                        <div className="flex gap-3 md:gap-2 items-center">
                             <BookmarkIcon className="hidden md:block w-8" />
                             <EmptyStarIcon className="block md:hidden w-5" />
                             <p className="text-star md:text-dark opacity-82 md:opacity-100">
                                 Save to my list
                             </p>
                         </div>
-                        <div>
+                        <div className="flex gap-10 md:gap-15 items-center">
                             <ShareIcon className="text-star opacity-80  md:opacity-100 md:text-dark-middle-gray" />
                             <p className="text-star md:text-dark opacity-82 md:opacity-100">
                                 Share
