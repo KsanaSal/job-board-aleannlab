@@ -4,6 +4,7 @@ import { ReactComponent as ShareIcon } from "../assets/Share-icon.svg";
 import { ReactComponent as BookmarkIcon } from "../assets/Bookmark.svg";
 import { ReactComponent as EmptyStarIcon } from "../assets/EmptyStar.svg";
 import { ReactComponent as ArrowIcon } from "../assets/Arrow.svg";
+import { ReactComponent as LocationIcon } from "../assets/Location.svg";
 import moment from "moment";
 
 const JobDetails = ({ jobs }: { jobs: Job[] }) => {
@@ -17,7 +18,7 @@ const JobDetails = ({ jobs }: { jobs: Job[] }) => {
     return (
         <>
             {job && (
-                <div className="container mx-auto rounded-lg bg-white py-6 px-6 md:py-14 my-5 flex flex-col md:flex-row gap-20 justify-center ">
+                <div className="container mx-auto rounded-lg bg-white py-6 px-6 md:py-14 my-5 flex flex-col md:flex-row gap-20 justify-center md:items-start">
                     <div className="">
                         <header className=" grid md:grid-cols-2 md:border-b-2 md:pb-2 md:mb-10">
                             <div className="border-b-2 mb-6 md:border-b-0 md:mb-0">
@@ -169,7 +170,26 @@ const JobDetails = ({ jobs }: { jobs: Job[] }) => {
                             Return to job board
                         </button>
                     </div>
-                    <div className="w-96">mapa</div>
+                    <div className="grid">
+                        <div className="border-b-2 mb-5 md:hidden">
+                            <h2 className="font-bold text-tx28 tracking-wide text-dark mb-10-mr">
+                                Contacts
+                            </h2>
+                        </div>
+                        <div className="grid border rounded-lgx bg-dark-blue py-8 px-14">
+                            <ul className="flex flex-col  items-center  text-light-gray">
+                                <li className="font-bold">Department name.</li>
+                                <li className="font-bold">{job.name}</li>
+                                <li className="flex items-center">
+                                    <LocationIcon className="text-white/70  mr-2" />
+                                    {job.address}
+                                </li>
+                                <li className="text-white/70">{job.phone}</li>
+                                <li className="text-white/70">{job.email}</li>
+                            </ul>
+                            <div></div>
+                        </div>
+                    </div>
                 </div>
             )}
         </>
