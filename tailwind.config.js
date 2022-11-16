@@ -20,6 +20,10 @@ module.exports = {
             margin: {
                 26: "26px",
             },
+            padding: {
+                18: "18px",
+                30: "30px",
+            },
             colors: {
                 dark: "#3A4562",
                 secondary: "#878D9D",
@@ -28,6 +32,7 @@ module.exports = {
                 "dark-gray": "#7D859C",
                 "dark-middle-gray": "#70778B",
                 "middle-blue": "#5876C5",
+                "dark-middle-blue": "#384564",
             },
             boxShadow: {
                 "4xl": "2px 1px 7px rgba(0, 0, 0, 0.08), 0px 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12)",

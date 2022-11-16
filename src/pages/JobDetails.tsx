@@ -10,9 +10,9 @@ const JobDetails = ({ jobs }: { jobs: Job[] }) => {
     console.log(jobs.filter((data) => data.id === id));
     console.log(job);
     return (
-        <div className="container mx-auto rounded-lg bg-white py-6 px-4 md:py-14 my-5 grid">
+        <div className="container mx-auto rounded-lg bg-white py-6 px-4 md:py-14 my-5 flex flex-col md:flex-row gap-20 justify-center ">
             <div className="md:min-w-fit">
-                <header className=" grid md:grid-cols-2 md:border-b-2 md:pb-2">
+                <header className=" grid md:grid-cols-2 md:border-b-2 md:pb-2 md:mb-10">
                     <div className="border-b-2 mb-6 md:border-b-0 md:mb-0">
                         <h1 className="font-bold text-tx28 tracking-wide text-dark mb-3 md:mb-0">
                             Job Details
@@ -34,6 +34,12 @@ const JobDetails = ({ jobs }: { jobs: Job[] }) => {
                         </div>
                     </div>
                 </header>
+                <button
+                    className="hidden md:block py-18 px-30 bg-dark-middle-blue rounded-lg text-white uppercase font-semibold text-xs tracking-wider"
+                    type="button"
+                >
+                    Aplly now
+                </button>
             </div>
             <div>mapa</div>
         </div>
