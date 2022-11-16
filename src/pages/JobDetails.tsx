@@ -85,7 +85,9 @@ const JobDetails = ({ jobs }: { jobs: Job[] }) => {
                                             .replace("\t", "")
                                             .split(".")
                                             .filter((e) => e.trim())
-                                            .map((el) => <li>{el}</li>)}
+                                            .map((el, index) => (
+                                                <li key={index}>{el}</li>
+                                            ))}
                                 </ul>
                             </div>
                         </section>
@@ -95,29 +97,68 @@ const JobDetails = ({ jobs }: { jobs: Job[] }) => {
                         >
                             Aplly now
                         </button>
-                        <div className="mb-16">
-                            <div className="border-b-2 mb-30">
-                                <h2 className="font-bold text-tx28 tracking-wide text-dark mb-30">
-                                    Attached images
-                                </h2>
+                        <div className="grid">
+                            <div className="mb-16 md:order-2">
+                                <div className="border-b-2 mb-30">
+                                    <h2 className="font-bold text-tx28 tracking-wide text-dark mb-30">
+                                        Attached images
+                                    </h2>
+                                </div>
+
+                                <div className="grid gap-10 grid-cols-2 md:grid-cols-3">
+                                    {job.pictures.map((el, index) => (
+                                        <img
+                                            key={index}
+                                            className="w-full rounded-lg object-cover "
+                                            src={el}
+                                            alt="job avatar"
+                                        />
+                                    ))}
+                                </div>
                             </div>
-                            <img
-                                className=" w-52 md:w-85 h-28 md:h-85 rounded-lg"
-                                src={job.pictures[0]}
-                                alt="job avatar"
-                            />
-                        </div>
-                        <div className="mb-16">
-                            <div className="border-b-2 mb-30">
-                                <h2 className="font-bold text-tx28 tracking-wide text-dark mb-30">
-                                    Additional info
-                                </h2>
+                            <div className="mb-16 md:mb-20 md:order-1">
+                                <div className="border-b-2 mb-30">
+                                    <h2 className="font-bold text-tx28 tracking-wide text-dark mb-30">
+                                        Additional info
+                                    </h2>
+                                </div>
+                                <div className="tracking-tight mb-6">
+                                    <p className="text-star opacity-82 text-lg mb-10-mr">
+                                        Employment type
+                                    </p>
+                                    <div className="grid grid-flow-col gap-2 ">
+                                        {job.employment_type.map(
+                                            (el, index) => (
+                                                <div
+                                                    key={index}
+                                                    className="rounded-lg py-4 bg-super-light-blue/30 border-2 border-light-blue/10"
+                                                >
+                                                    <p className="text-light-blue font-bold text-tx16 text-center">
+                                                        {el}
+                                                    </p>
+                                                </div>
+                                            )
+                                        )}
+                                    </div>
+                                </div>
+                                <div className="tracking-tight">
+                                    <p className="text-star opacity-82 text-lg mb-10-mr">
+                                        Benefits
+                                    </p>
+                                    <div className="grid grid-flow-col gap-2 ">
+                                        {job.benefits.map((el, index) => (
+                                            <div
+                                                key={index}
+                                                className="rounded-lg py-4 bg-super-light-yellow/15 border-2 border-super-light-yellow"
+                                            >
+                                                <p className="text-dark-yellow font-bold text-tx16 text-center">
+                                                    {el}
+                                                </p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
                             </div>
-                            <img
-                                className=" w-52 md:w-85 h-28 md:h-85 rounded-lg"
-                                src={job.pictures[0]}
-                                alt="job avatar"
-                            />
                         </div>
                     </div>
                     <div className="w-96">mapa</div>

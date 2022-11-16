@@ -21,6 +21,7 @@ module.exports = {
                 26: "26px",
                 135: "135px",
                 30: "30px",
+                "10-mr": "10px",
             },
             padding: {
                 18: "18px",
@@ -35,6 +36,10 @@ module.exports = {
                 "dark-middle-gray": "#70778B",
                 "middle-blue": "#5876C5",
                 "dark-middle-blue": "#384564",
+                "light-blue": "#55699E",
+                "super-light-blue": "#A1B1DB",
+                "super-light-yellow": "#FFCF00",
+                "dark-yellow": "#988B49",
             },
             boxShadow: {
                 "4xl": "2px 1px 7px rgba(0, 0, 0, 0.08), 0px 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12)",
@@ -43,10 +48,12 @@ module.exports = {
             fontSize: {
                 tx28: ["28px", "34px"],
                 tx20: ["20px", "25px"],
+                tx16: ["16px", "16px"],
             },
             opacity: {
                 82: ".82",
                 13: ".13",
+                15: ".15",
             },
             listStyleType: {
                 square: "square",
