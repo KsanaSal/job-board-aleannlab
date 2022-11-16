@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/job-board-aleannlab/static/css/main.99bd6762.css",
-    "main.js": "/job-board-aleannlab/static/js/main.bcc09eec.js",
+    "main.css": "/job-board-aleannlab/static/css/main.49a73860.css",
+    "main.js": "/job-board-aleannlab/static/js/main.1fcbc8f7.js",
     "static/js/787.63361eb2.chunk.js": "/job-board-aleannlab/static/js/787.63361eb2.chunk.js",
     "static/media/ProximaNovaCond-ThinIt.eot": "/job-board-aleannlab/static/media/ProximaNovaCond-ThinIt.e07d00027a8368167bb2.eot",
     "static/media/ProximaNovaCond-RegularIt.eot": "/job-board-aleannlab/static/media/ProximaNovaCond-RegularIt.8ad218b5cf9bcde446fa.eot",
@@ -136,12 +136,12 @@
     "static/media/Arrow.svg": "/job-board-aleannlab/static/media/Arrow.81b0f26cb6486aa14408fc44c9104536.svg",
     "static/media/Bookmark.svg": "/job-board-aleannlab/static/media/Bookmark.2aaeb9ed121c166915fe225b4885147f.svg",
     "static/media/Location.svg": "/job-board-aleannlab/static/media/Location.1c093ca173a538132f1ce31ab6296061.svg",
-    "main.99bd6762.css.map": "/job-board-aleannlab/static/css/main.99bd6762.css.map",
-    "main.bcc09eec.js.map": "/job-board-aleannlab/static/js/main.bcc09eec.js.map",
+    "main.49a73860.css.map": "/job-board-aleannlab/static/css/main.49a73860.css.map",
+    "main.1fcbc8f7.js.map": "/job-board-aleannlab/static/js/main.1fcbc8f7.js.map",
     "787.63361eb2.chunk.js.map": "/job-board-aleannlab/static/js/787.63361eb2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.99bd6762.css",
-    "static/js/main.bcc09eec.js"
+    "static/css/main.49a73860.css",
+    "static/js/main.1fcbc8f7.js"
   ]
 }
