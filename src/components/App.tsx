@@ -44,7 +44,7 @@ function App() {
                 />
                 <Route
                     path="jobBoard/:id"
-                    element={<JobDetails jobs={jobs} />}
+                    element={jobs.length > 0 && <JobDetails jobs={jobs} />}
                 ></Route>
             </Route>
         </Routes>

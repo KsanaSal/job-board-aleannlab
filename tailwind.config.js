@@ -46,6 +46,9 @@ module.exports = {
                 82: ".82",
                 13: ".13",
             },
+            listStyleType: {
+                square: "square",
+            },
         },
     },
     plugins: [],
