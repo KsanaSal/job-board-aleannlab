@@ -68,17 +68,17 @@ const JobDetails = ({ jobs }: { jobs: Job[] }) => {
                                 {description[0]}
                             </p>
                             <div className="tracking-tight mb-6">
-                                <h2 className="font-bold text-tx20 text-dark mb-2">
+                                <h3 className="font-bold text-tx20 text-dark mb-2">
                                     {description[1]}
-                                </h2>
+                                </h3>
                                 <p className="text-star opacity-82 text-lg">
                                     {description[2]}
                                 </p>
                             </div>
                             <div className="tracking-tight mb-6">
-                                <h2 className="font-bold text-tx20 text-dark mb-8">
+                                <h3 className="font-bold text-tx20 text-dark mb-8">
                                     {description[3]}
-                                </h2>
+                                </h3>
                                 <ul className="list-square list-inside md:list-outside text-star opacity-82 text-lg">
                                     {description[4] &&
                                         description[4]
@@ -90,11 +90,35 @@ const JobDetails = ({ jobs }: { jobs: Job[] }) => {
                             </div>
                         </section>
                         <button
-                            className="block mx-auto py-18 px-30 bg-dark-middle-blue rounded-lg text-white uppercase font-semibold text-xs"
+                            className="block mx-auto md:mx-0 py-18 px-30 bg-dark-middle-blue rounded-lg text-white uppercase font-semibold text-xs mb-135"
                             type="button"
                         >
                             Aplly now
                         </button>
+                        <div className="mb-16">
+                            <div className="border-b-2 mb-30">
+                                <h2 className="font-bold text-tx28 tracking-wide text-dark mb-30">
+                                    Attached images
+                                </h2>
+                            </div>
+                            <img
+                                className=" w-52 md:w-85 h-28 md:h-85 rounded-lg"
+                                src={job.pictures[0]}
+                                alt="job avatar"
+                            />
+                        </div>
+                        <div className="mb-16">
+                            <div className="border-b-2 mb-30">
+                                <h2 className="font-bold text-tx28 tracking-wide text-dark mb-30">
+                                    Additional info
+                                </h2>
+                            </div>
+                            <img
+                                className=" w-52 md:w-85 h-28 md:h-85 rounded-lg"
+                                src={job.pictures[0]}
+                                alt="job avatar"
+                            />
+                        </div>
                     </div>
                     <div className="w-96">mapa</div>
                 </div>
