@@ -3,6 +3,7 @@ import { Job } from "../models/job";
 import { ReactComponent as ShareIcon } from "../assets/Share-icon.svg";
 import { ReactComponent as BookmarkIcon } from "../assets/Bookmark.svg";
 import { ReactComponent as EmptyStarIcon } from "../assets/EmptyStar.svg";
+import { ReactComponent as ArrowIcon } from "../assets/Arrow.svg";
 import moment from "moment";
 
 const JobDetails = ({ jobs }: { jobs: Job[] }) => {
@@ -98,7 +99,7 @@ const JobDetails = ({ jobs }: { jobs: Job[] }) => {
                             Aplly now
                         </button>
                         <div className="grid">
-                            <div className="mb-16 md:order-2">
+                            <div className="mb-16 md:mb-24 md:order-2">
                                 <div className="border-b-2 mb-30">
                                     <h2 className="font-bold text-tx28 tracking-wide text-dark mb-30">
                                         Attached images
@@ -160,6 +161,13 @@ const JobDetails = ({ jobs }: { jobs: Job[] }) => {
                                 </div>
                             </div>
                         </div>
+                        <button
+                            className="hidden md:flex mx-auto md:mx-0 py-18 px-30 bg-dark-middle-blue/14 rounded-lg text-dark uppercase font-semibold text-xs mb-135"
+                            type="button"
+                        >
+                            <ArrowIcon className="text-dark-middle-blue md:text-dark-middle-gray mr-5" />
+                            Return to job board
+                        </button>
                     </div>
                     <div className="w-96">mapa</div>
                 </div>

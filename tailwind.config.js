@@ -54,6 +54,7 @@ module.exports = {
                 82: ".82",
                 13: ".13",
                 15: ".15",
+                14: ".14",
             },
             listStyleType: {
                 square: "square",
