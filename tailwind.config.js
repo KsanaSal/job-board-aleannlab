@@ -40,6 +40,7 @@ module.exports = {
             },
             fontSize: {
                 tx28: ["28px", "34px"],
+                tx20: ["20px", "25px"],
             },
             opacity: {
                 82: ".82",
