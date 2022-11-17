@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Job } from "../models/job";
 import { ReactComponent as ShareIcon } from "../assets/Share-icon.svg";
 import { ReactComponent as BookmarkIcon } from "../assets/Bookmark.svg";
@@ -162,13 +163,15 @@ const JobDetails = ({ jobs }: { jobs: Job[] }) => {
                                 </div>
                             </div>
                         </div>
-                        <button
-                            className="hidden md:flex mx-auto md:mx-0 py-18 px-30 bg-dark-middle-blue/14 rounded-lg text-dark uppercase font-semibold text-xs mb-135"
-                            type="button"
-                        >
-                            <ArrowIcon className="text-dark-middle-blue md:text-dark-middle-gray mr-5" />
-                            Return to job board
-                        </button>
+                        <Link to={`/`}>
+                            <button
+                                className="hidden md:flex mx-auto md:mx-0 py-18 px-30 bg-dark-middle-blue/14 rounded-lg text-dark uppercase font-semibold text-xs mb-135"
+                                type="button"
+                            >
+                                <ArrowIcon className="text-dark-middle-blue md:text-dark-middle-gray mr-5" />
+                                Return to job board
+                            </button>
+                        </Link>
                     </div>
                     <div className="grid">
                         <div className="border-b-2 mb-5 md:hidden">
