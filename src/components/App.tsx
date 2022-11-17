@@ -25,10 +25,28 @@ function App() {
                     }
                 );
 
-                setJobs(response.data);
+                setJobs(
+                    response.data.map((el: Job, i: number) => {
+                        return {
+                            ...el,
+                            pictures: el.pictures.map(
+                                (url, index) => `${url}?random=${i + 1}${index}`
+                            ),
+                        };
+                    })
+                );
                 setLoading(false);
             } catch (error) {
-                setJobs(Jobs);
+                setJobs(
+                    Jobs.map((el: Job, i: number) => {
+                        return {
+                            ...el,
+                            pictures: el.pictures.map(
+                                (url, index) => `${url}?random=${i + 1}${index}`
+                            ),
+                        };
+                    })
+                );
                 setLoading(false);
             }
         };

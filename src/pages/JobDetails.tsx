@@ -57,7 +57,7 @@ const JobDetails = ({ jobs }: { jobs: Job[] }) => {
                                     Brutto, per year
                                 </p>
                                 <span className="font-bold text-tx20 text-dark">
-                                    {job.salary.replaceAll("k", " 000")}
+                                    € {job.salary.replaceAll("k", " 000")}
                                 </span>
                             </div>
                             <p className="text-sm text-star opacity-60 order-2 md:order-3 flex items-center">
@@ -111,7 +111,7 @@ const JobDetails = ({ jobs }: { jobs: Job[] }) => {
                                     {job.pictures.map((el, index) => (
                                         <img
                                             key={index}
-                                            className="w-full rounded-lg object-cover "
+                                            className="w-full rounded-lg object-cover border border-light-blue border-b-2"
                                             src={el}
                                             alt="job avatar"
                                         />
