@@ -10,13 +10,10 @@ import moment from "moment";
 import { MapJob } from "../components/MapJob";
 
 const JobDetails = ({ jobs }: { jobs: Job[] }) => {
-    console.log(jobs);
     const { id } = useParams();
     const job: Job = jobs.filter((data) => data.id === id)[0];
     const description = job.description.split("\n").filter((e) => e.trim());
-    console.log(jobs.filter((data) => data.id === id));
 
-    console.log(job.description.split("\n").filter((e) => e.trim()));
     return (
         <>
             {job && (

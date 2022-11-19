@@ -8,7 +8,7 @@ export const JobBoardList = ({ jobList, loading }: any) => {
     if (loading) {
         return <h2>Loading...</h2>;
     }
-    console.log(jobList);
+
     return (
         <div className="py-2 md:py-8 grid place-content-center">
             {jobList.map((job: Job) => (
