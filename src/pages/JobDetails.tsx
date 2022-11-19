@@ -7,6 +7,7 @@ import { ReactComponent as EmptyStarIcon } from "../assets/EmptyStar.svg";
 import { ReactComponent as ArrowIcon } from "../assets/Arrow.svg";
 import { ReactComponent as LocationIcon } from "../assets/Location.svg";
 import moment from "moment";
+import { MapJob } from "../components/MapJob";
 
 const JobDetails = ({ jobs }: { jobs: Job[] }) => {
     console.log(jobs);
@@ -179,18 +180,28 @@ const JobDetails = ({ jobs }: { jobs: Job[] }) => {
                                 Contacts
                             </h2>
                         </div>
-                        <div className="grid border rounded-lgx bg-dark-blue py-8 px-14">
-                            <ul className="flex flex-col  items-center  text-light-gray">
-                                <li className="font-bold">Department name.</li>
-                                <li className="font-bold">{job.name}</li>
-                                <li className="flex items-center">
-                                    <LocationIcon className="text-white/70  mr-2" />
-                                    {job.address}
-                                </li>
-                                <li className="text-white/70">{job.phone}</li>
-                                <li className="text-white/70">{job.email}</li>
-                            </ul>
-                            <div></div>
+                        <div className="grid   w-80 md:w-400 h-430 px-4">
+                            <div className="bg-dark-blue rounded-lg overflow-hidden">
+                                <ul className="flex flex-col  items-center  text-light-gray py-8 px-14">
+                                    <li className="font-bold">
+                                        Department name.
+                                    </li>
+                                    <li className="font-bold">{job.name}</li>
+                                    <li className="flex items-center">
+                                        <LocationIcon className="text-white/70  mr-2" />
+                                        {job.address}
+                                    </li>
+                                    <li className="text-white/70">
+                                        {job.phone}
+                                    </li>
+                                    <li className="text-white/70">
+                                        {job.email}
+                                    </li>
+                                </ul>
+                                <div className="">
+                                    <MapJob location={job.location} />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
