@@ -2,7 +2,6 @@ import maplibregl from "maplibre-gl";
 import Map, { Marker, NavigationControl } from "react-map-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { Location } from "../models/job";
-import { LocationContext } from "react-router/dist/lib/context";
 
 export const MapJob = ({ location }: { location: Location }) => {
     return (

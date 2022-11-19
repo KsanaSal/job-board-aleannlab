@@ -180,16 +180,16 @@ const JobDetails = ({ jobs }: { jobs: Job[] }) => {
                                 Contacts
                             </h2>
                         </div>
-                        <div className="grid   w-80 md:w-400 h-430 px-4">
+                        <div className="grid   w-72 md:w-400 h-430 px-4">
                             <div className="bg-dark-blue rounded-lg overflow-hidden">
                                 <ul className="flex flex-col  items-center  text-light-gray py-8 px-14">
                                     <li className="font-bold">
                                         Department name.
                                     </li>
                                     <li className="font-bold">{job.name}</li>
-                                    <li className="flex items-center">
+                                    <li className="flex md:items-center items-start">
                                         <LocationIcon className="text-white/70  mr-2" />
-                                        {job.address}
+                                        <span>{job.address}</span>
                                     </li>
                                     <li className="text-white/70">
                                         {job.phone}
